@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ParallaxIt</string>
 
+    <string name="placeholder_text_small">Nor again is there anyone who loves or pursues</string>
+    <string name="placeholder_text_medium">Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain</string>
+
 </resources>
