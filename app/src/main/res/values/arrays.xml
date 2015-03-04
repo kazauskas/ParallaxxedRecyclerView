@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="names">
+        <item>Animals</item>
+        <item>Furniture</item>
+        <item>Birds</item>
+        <item>Fashion</item>
+        <item>Tech</item>
+        <item>Architecture</item>
+        <item>Rodents</item>
+    </string-array>
+
+    <string-array name="thumbs">
+        <item>@drawable/animals</item>
+        <item>@drawable/furniture</item>
+        <item>@drawable/birds</item>
+        <item>@drawable/fashion</item>
+        <item>@drawable/tech</item>
+        <item>@drawable/architecture</item>
+        <item>@drawable/rodents</item>
+    </string-array>
+
+</resources>

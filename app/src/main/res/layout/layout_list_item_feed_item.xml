@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/feed_item_height"
+    android:background="#0f0">
+
+    <me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.offset.ImageViewOffset
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/feed_item_height"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</FrameLayout>
