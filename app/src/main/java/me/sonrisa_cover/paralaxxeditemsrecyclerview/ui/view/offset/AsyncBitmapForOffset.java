@@ -62,7 +62,6 @@ public class AsyncBitmapForOffset extends BitmapForOffset {
         @Override
         protected void onPostExecute(Bitmap result){
             onFullBitmapReady(result);
-            Log.i("bitmap", "ready");
         }
     }
 

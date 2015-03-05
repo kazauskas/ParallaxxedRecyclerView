@@ -7,6 +7,7 @@ package me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.adapter;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -91,9 +92,9 @@ public abstract class BaseParallaxFeedAdapter extends RecyclerView.Adapter<Recyc
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
-        BaseListItem feed = mFeedData.get(position);
-        ((ItemImage.ParallaxImageHolder)viewHolder).categoryThumb.setImageResource(((ItemImage)feed).getImageResId());
-        ((ItemImage.ParallaxImageHolder)viewHolder).categoryName.setText(((ItemImage)feed).getText());
+        ItemImage feed = ((ItemImage)mFeedData.get(position));
+        ((ItemImage.ParallaxImageHolder)viewHolder).categoryThumb.setImageResource(feed.getImageResId());
+        ((ItemImage.ParallaxImageHolder)viewHolder).categoryName.setText(feed.getText());
     }
 
     @Override
