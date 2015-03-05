@@ -53,6 +53,7 @@ public class ImageViewOffset extends ImageView {
         if (null != mSourceBitmap){
             mSourceBitmap.resetOffset();
             mSourceBitmap.cancel();
+            mSourceBitmap = null;
         }
     }
 
