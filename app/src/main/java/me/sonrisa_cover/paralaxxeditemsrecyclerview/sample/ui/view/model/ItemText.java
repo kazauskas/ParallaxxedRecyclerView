@@ -1,4 +1,4 @@
-package me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model;
+package me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.view.model;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.R;
+import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.BaseListItem;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.contract.IHasText;
 
 /**

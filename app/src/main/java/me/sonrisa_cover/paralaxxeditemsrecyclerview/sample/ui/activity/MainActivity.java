@@ -1,4 +1,4 @@
-package me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.activity;
+package me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.activity;
 
 import android.content.res.TypedArray;
 import android.os.Bundle;
@@ -11,11 +11,11 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.R;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.adapter.BaseParallaxFeedAdapter;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.adapter.ParallaxFeedAdapter;
+import me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.adapter.ParallaxFeedAdapter;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.BaseListItem;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.ItemImage;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.ParallaxRecyclerView;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.ItemText;
+import me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.view.model.ItemText;
 
 
 public class MainActivity extends ActionBarActivity {
