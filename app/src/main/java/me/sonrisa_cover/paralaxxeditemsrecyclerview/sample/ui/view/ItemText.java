@@ -1,4 +1,4 @@
-package me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.view.model;
+package me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.view;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;

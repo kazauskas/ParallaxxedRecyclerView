@@ -4,10 +4,10 @@ import android.support.v7.widget.RecyclerView;
 
 import java.util.List;
 
+import me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.view.ItemText;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.adapter.BaseParallaxFeedAdapter;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.BaseListItem;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.ItemImage;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.view.model.ItemText;
 
 /**
  * Created by vadim on 3/4/15.

@@ -3,5 +3,24 @@
 
     <string name="placeholder_text_small">Nor again is there anyone who loves or pursues</string>
     <string name="placeholder_text_medium">Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain</string>
+    <string name="placeholder_text_title">Включите подсказки</string>
+    <string name="placeholder_text_content">Чтобы получать подсказки, актуальные для определения места, например прогноз погоды или сведения о пробках, включите функцию \"Мое местоположение\"</string>
+
+
+    <string name="font_roboto_condensed_bold">fonts/RobotoCondensed-Bold.ttf</string>
+    <string name="font_roboto_condensed_regular">fonts/RobotoCondensed-Regular.ttf</string>
+    <string name="font_roboto_condensed_light">fonts/RobotoCondensed-Light.ttf</string>
+    <string name="font_roboto_condensed_italic">fonts/RobotoCondensed-Italic.ttf</string>
+
+    <string name="font_roboto_bold">fonts/Roboto-Bold.ttf</string>
+    <string name="font_roboto_light">fonts/Roboto-Light.ttf</string>
+    <string name="font_roboto_medium">fonts/Roboto-Medium.ttf</string>
+    <string name="font_roboto_regular">fonts/Roboto-Regular.ttf</string>
+    <string name="font_roboto_thin">fonts/Roboto-Thin.ttf</string>
+
+    <string name="font_open_sans_bold">fonts/OpenSans-Bold.ttf</string>
+    <string name="font_open_sans_light">fonts/OpenSans-Light.ttf</string>
+    <string name="font_open_sans_regular">fonts/OpenSans-Regular.ttf</string>
+    <string name="font_open_sans_semibold">fonts/OpenSans-Semibold.ttf</string>
 
 </resources>

@@ -5,4 +5,30 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="list_item"/>
+    <style name="list_item.text">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="font_name">@string/font_open_sans_light</item>
+    </style>
+
+    <style name="list_item.text.title">
+        <item name="android:textColor">@color/grey_head</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:paddingTop">16dp</item>
+    </style>
+
+    <style name="list_item.text.content">
+        <item name="android:textColor">@color/grey_hidden</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="list_item.text.next">
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
 </resources>
