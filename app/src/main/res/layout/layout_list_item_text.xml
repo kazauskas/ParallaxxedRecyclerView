@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
 
-    <TextView
+    <me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.view.TextViewF
         android:id="@+id/tv_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textColor="#2c3e50"
-        android:padding="26dp"
-        android:textSize="20sp" />
+        android:text="@string/placeholder_text_title"
+        style="@style/list_item.text.title" />
 
-</FrameLayout>
+    <me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.view.TextViewF
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/placeholder_text_content"
+        style="@style/list_item.text.content"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_next_flat"
+        style="@style/list_item.text.next"
+        />
+
+</LinearLayout>
