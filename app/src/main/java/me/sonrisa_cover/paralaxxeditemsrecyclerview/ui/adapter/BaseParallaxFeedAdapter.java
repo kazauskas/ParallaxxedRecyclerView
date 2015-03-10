@@ -20,6 +20,7 @@ import me.sonrisa_cover.paralaxxeditemsrecyclerview.R;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.BaseListItem;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.ItemImage;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.offset.ImageViewOffset;
+import me.sonrisa_cover.paralaxxeditemsrecyclerview.utils.TimeLogger;
 
 public abstract class BaseParallaxFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements IAdapterParallaxable {
 
@@ -93,7 +94,7 @@ public abstract class BaseParallaxFeedAdapter extends RecyclerView.Adapter<Recyc
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
         ItemImage feed = ((ItemImage)mFeedData.get(position));
-        ((ItemImage.ParallaxImageHolder)viewHolder).categoryThumb.setImageResource(feed.getImageResId());
+        ((ItemImage.ParallaxImageHolder)viewHolder).categoryThumb.setImageResource(feed.getImageResId(), android.R.color.white);
         ((ItemImage.ParallaxImageHolder)viewHolder).categoryName.setText(feed.getText());
     }
 

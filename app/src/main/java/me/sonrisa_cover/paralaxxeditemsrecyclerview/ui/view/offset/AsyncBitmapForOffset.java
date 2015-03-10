@@ -16,14 +16,16 @@ public class AsyncBitmapForOffset extends BitmapForOffset {
 
     private Context ctx;
 
-    public AsyncBitmapForOffset(@NonNull Context ctx, @NonNull Integer resId, @NonNull Integer baseWidth, @NonNull Integer baseHeight){
+    private IBitmapResourceDecodeFinished mBitmapDecodeListener;
+
+    public AsyncBitmapForOffset(@NonNull Context ctx, @NonNull Integer resId, @NonNull Integer baseWidth, @NonNull Integer baseHeight, IBitmapResourceDecodeFinished bitmapDecodeListener){
         if ((INCORRECT_SIZE == baseWidth) || (INCORRECT_SIZE == baseHeight)){
             throw new IllegalArgumentException("Base width and base height should be more than 0.");
         }
         this.ctx = ctx;
+        mBitmapDecodeListener = bitmapDecodeListener;
         mBitmapResourceDecodingTask = new AsyncBitmapResourceDecoding();
         mBitmapResourceDecodingTask.execute(resId);
-
         initBaseWidthAndHeight(baseWidth, baseHeight);
     }
 
@@ -46,6 +48,7 @@ public class AsyncBitmapForOffset extends BitmapForOffset {
         mBitmapResourceDecodingTask = null;
         setBitmap(bitmap);
         initDimensions();
+        mBitmapDecodeListener.onBitmapResourceDecodeFinished(bitmap);
     }
 
     class AsyncBitmapResourceDecoding extends AsyncTask<Integer, Void, Bitmap> {

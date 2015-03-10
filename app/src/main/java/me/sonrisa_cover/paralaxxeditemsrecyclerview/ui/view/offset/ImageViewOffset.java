@@ -1,19 +1,25 @@
 package me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.offset;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.RectF;
+import android.graphics.drawable.ColorDrawable;
 import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
+import me.sonrisa_cover.paralaxxeditemsrecyclerview.R;
+import me.sonrisa_cover.paralaxxeditemsrecyclerview.utils.TimeLogger;
+import me.sonrisa_cover.paralaxxeditemsrecyclerview.utils.UIUtils;
+
 /**
  * Created by vadim on 3/3/15.
  */
-public class ImageViewOffset extends ImageView {
+public class ImageViewOffset extends ImageView implements IBitmapResourceDecodeFinished{
     private final static String TAG = "ImageViewOffset";
 
     private Integer mResourceId = null;
@@ -40,6 +46,13 @@ public class ImageViewOffset extends ImageView {
 
     public ImageViewOffset(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        setMinimumDimensions();
+    }
+
+    private void setMinimumDimensions(){
+
+        this.setMinimumWidth(UIUtils.getScreenDimensions(getContext()).x);
+        this.setMinimumHeight(Math.round(getResources().getDimension(R.dimen.feed_item_height)));
     }
 
     public void offsetTo(int offset, @NonNull Integer scrollHeight){
@@ -57,10 +70,10 @@ public class ImageViewOffset extends ImageView {
         }
     }
 
-    @Override
-    public void setImageResource(int resId) {
-        super.setImageResource(resId);
+    public void setImageResource(int resId, int placeholderColorResId) {
+        this.setAlpha(0f);
         mResourceId = resId;
+        this.setImageDrawable(new ColorDrawable(getResources().getColor(placeholderColorResId)));
     }
 
     @Override
@@ -99,7 +112,7 @@ public class ImageViewOffset extends ImageView {
 
     private void checkIsSourceBitmapInitialized(){
         if ((null == mSourceBitmap) && (null != mResourceId)){
-            mSourceBitmap = new AsyncBitmapForOffset(this.getContext().getApplicationContext(), mResourceId, getMeasuredWidth(), getMeasuredHeight());
+            mSourceBitmap = new AsyncBitmapForOffset(this.getContext().getApplicationContext(), mResourceId, getMeasuredWidth(), getMeasuredHeight(), this);
         }
     }
 
@@ -107,4 +120,11 @@ public class ImageViewOffset extends ImageView {
         return ((null != mSourceBitmap) && (mSourceBitmap.isReady()));
     }
 
+
+    @Override
+    public void onBitmapResourceDecodeFinished(Bitmap bm) {
+        this.setImageBitmap(bm);
+        this.animate().alpha(1f).setDuration(getResources().getInteger(android.R.integer.config_shortAnimTime));
+        invalidate();
+    }
 }

@@ -35,6 +35,8 @@ public class ParallaxRecyclerView extends RecyclerView {
         this.mLayoutManager = new LinearLayoutManager(this.getContext());
         this.setLayoutManager(mLayoutManager);
 
+        this.setItemViewCacheSize(6);
+
         this.mScrollListener = new ParallaxRecyclerViewOnScrollListener();
         this.setOnScrollListener(mScrollListener);
     }

@@ -8,11 +8,15 @@ import me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.view.ItemText;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.adapter.BaseParallaxFeedAdapter;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.BaseListItem;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.ItemImage;
+import me.sonrisa_cover.paralaxxeditemsrecyclerview.utils.TimeLogger;
 
 /**
  * Created by vadim on 3/4/15.
  */
 public class ParallaxFeedAdapter extends BaseParallaxFeedAdapter {
+
+    private final static String TAG = "ParallaxFeedAdapter";
+
 
     public ParallaxFeedAdapter(List<BaseListItem> itemsData) {
         super(itemsData);
