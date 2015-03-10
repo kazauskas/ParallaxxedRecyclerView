@@ -1,10 +1,9 @@
-package me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.offset;
+package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.offset;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.support.annotation.NonNull;
-import android.util.Log;
 
 /**
  * Created by vadim on 3/3/15.

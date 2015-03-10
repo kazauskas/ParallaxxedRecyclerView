@@ -1,4 +1,4 @@
-package me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.adapter;
+package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.adapter;
 
 /**
  * Created by vadim on 3/2/15.
@@ -7,7 +7,6 @@ package me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.adapter;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,11 +15,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.R;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.BaseListItem;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.ItemImage;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.offset.ImageViewOffset;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.utils.TimeLogger;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.R;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.BaseListItem;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.ItemImage;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.offset.ImageViewOffset;
 
 public abstract class BaseParallaxFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements IAdapterParallaxable {
 

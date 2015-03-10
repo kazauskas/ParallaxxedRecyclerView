@@ -6,8 +6,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.R;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.BaseListItem;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.contract.IHasText;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.BaseListItem;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.contract.IHasText;
 
 /**
  * Created by vadim on 3/4/15.

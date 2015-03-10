@@ -5,7 +5,7 @@
 
     tools:context=".MainActivity">
 
-    <me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.ParallaxRecyclerView
+    <com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.ParallaxRecyclerView
         android:id="@+id/rv_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

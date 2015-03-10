@@ -1,4 +1,4 @@
-package me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.offset;
+package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.offset;
 
 import android.graphics.Bitmap;
 

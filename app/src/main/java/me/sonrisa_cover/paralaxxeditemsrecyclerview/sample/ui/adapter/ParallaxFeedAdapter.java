@@ -2,13 +2,13 @@ package me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.adapter;
 
 import android.support.v7.widget.RecyclerView;
 
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.adapter.BaseParallaxFeedAdapter;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.BaseListItem;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.ItemImage;
+
 import java.util.List;
 
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.view.ItemText;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.adapter.BaseParallaxFeedAdapter;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.BaseListItem;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.ItemImage;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.utils.TimeLogger;
 
 /**
  * Created by vadim on 3/4/15.

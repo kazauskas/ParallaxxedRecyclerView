@@ -1,4 +1,4 @@
-package me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view;
+package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view;
 
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 
 
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.adapter.IAdapterParallaxable;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.adapter.IAdapterParallaxable;
 
 /**
  * Created by vadim on 3/2/15.

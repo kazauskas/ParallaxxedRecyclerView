@@ -10,11 +10,11 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.R;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.adapter.BaseParallaxFeedAdapter;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.adapter.BaseParallaxFeedAdapter;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.adapter.ParallaxFeedAdapter;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.BaseListItem;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.ItemImage;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.ParallaxRecyclerView;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.BaseListItem;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.ItemImage;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.ParallaxRecyclerView;
 import me.sonrisa_cover.paralaxxeditemsrecyclerview.sample.ui.view.ItemText;
 
 

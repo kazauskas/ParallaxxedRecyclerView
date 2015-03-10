@@ -1,4 +1,4 @@
-package me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model;
+package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -6,10 +6,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.R;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.contract.IHasImageResourceId;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model.contract.IHasText;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.offset.ImageViewOffset;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.R;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.contract.IHasImageResourceId;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.contract.IHasText;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.offset.ImageViewOffset;
 
 /**
  * Created by vadim on 3/2/15.

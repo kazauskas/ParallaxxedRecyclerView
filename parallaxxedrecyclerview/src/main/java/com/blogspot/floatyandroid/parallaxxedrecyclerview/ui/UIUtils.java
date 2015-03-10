@@ -1,4 +1,4 @@
-package me.sonrisa_cover.paralaxxeditemsrecyclerview.utils;
+package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui;
 
 import android.content.Context;
 import android.graphics.Point;

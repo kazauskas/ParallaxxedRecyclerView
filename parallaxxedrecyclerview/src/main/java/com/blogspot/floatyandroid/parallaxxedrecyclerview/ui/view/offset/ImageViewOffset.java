@@ -1,9 +1,8 @@
-package me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.offset;
+package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.offset;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.RectF;
@@ -12,9 +11,9 @@ import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.R;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.utils.TimeLogger;
-import me.sonrisa_cover.paralaxxeditemsrecyclerview.utils.UIUtils;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.R;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.UIUtils;
+
 
 /**
  * Created by vadim on 3/3/15.

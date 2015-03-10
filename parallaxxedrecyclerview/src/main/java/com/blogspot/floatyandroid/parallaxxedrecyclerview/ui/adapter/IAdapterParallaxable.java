@@ -1,4 +1,4 @@
-package me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.adapter;
+package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.adapter;
 
 import android.support.v7.widget.LinearLayoutManager;
 
