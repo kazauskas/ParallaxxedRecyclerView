@@ -72,7 +72,7 @@ public abstract class BaseParallaxFeedAdapter extends RecyclerView.Adapter<Recyc
     }
 
     public void onViewRecycled (RecyclerView.ViewHolder holder){
-        if (mItemTypes.get(ItemImage.getClassType()).equals(holder.getItemViewType())){
+        if ((null != mItemTypes.get(ItemImage.getClassType())) && (mItemTypes.get(ItemImage.getClassType()).equals(holder.getItemViewType()))){
             ((ItemImage.ParallaxImageHolder)holder).categoryThumb.cancel();
         }
     }
@@ -89,13 +89,6 @@ public abstract class BaseParallaxFeedAdapter extends RecyclerView.Adapter<Recyc
                 .inflate(resId, null);
 
         return getHolderByType(itemLayoutView, viewType);
-    }
-
-    @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
-        ItemImage feed = ((ItemImage)mFeedData.get(position));
-        ((ItemImage.ParallaxImageHolder)viewHolder).categoryThumb.setImageResource(feed.getImageResId(), android.R.color.white);
-        ((ItemImage.ParallaxImageHolder)viewHolder).categoryName.setText(feed.getText());
     }
 
     @Override

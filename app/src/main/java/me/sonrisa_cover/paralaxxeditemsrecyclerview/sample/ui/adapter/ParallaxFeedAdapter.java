@@ -17,7 +17,6 @@ public class ParallaxFeedAdapter extends BaseParallaxFeedAdapter {
 
     private final static String TAG = "ParallaxFeedAdapter";
 
-
     public ParallaxFeedAdapter(List<BaseListItem> itemsData) {
         super(itemsData);
     }
@@ -31,7 +30,10 @@ public class ParallaxFeedAdapter extends BaseParallaxFeedAdapter {
         }
 /* if holder looks like to ItemImageParallax we just call nested binding implementation*/
         else if (item.getType().equals(ItemImage.getClassType())){
-            super.onBindViewHolder(holder, position);
+            ItemImage feed = (ItemImage)item;
+            ItemImage.ParallaxImageHolder imageHolder = (ItemImage.ParallaxImageHolder)holder;
+            if (null != feed.getImageResId()) imageHolder.categoryThumb.setImageResource(feed.getImageResId(), android.R.color.white);
+            if (null != feed.getText()) imageHolder.categoryName.setText(feed.getText());
         }
     }
 }
