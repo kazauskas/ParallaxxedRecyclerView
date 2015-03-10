@@ -70,6 +70,10 @@ public class ImageViewOffset extends ImageView implements IBitmapResourceDecodeF
         }
     }
 
+    public void setImageBackground(int placeholderColorResId){
+        this.setImageDrawable(new ColorDrawable(getResources().getColor(placeholderColorResId)));
+    }
+
     public void setImageResource(int resId, int placeholderColorResId) {
         this.setAlpha(0f);
         mResourceId = resId;

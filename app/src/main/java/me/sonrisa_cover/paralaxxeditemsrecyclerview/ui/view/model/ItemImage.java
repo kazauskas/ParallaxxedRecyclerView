@@ -1,6 +1,7 @@
 package me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.model;
 
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
@@ -15,12 +16,12 @@ import me.sonrisa_cover.paralaxxeditemsrecyclerview.ui.view.offset.ImageViewOffs
  */
 public class ItemImage extends BaseListItem implements IHasImageResourceId, IHasText{
 
-    private String mNameId;
-    private int mDrawableId;
+    private String mNameId = null;
+    private Integer mDrawableId = null;
 
     public ItemImage(){}
 
-    public ItemImage(String mName, Integer mDrawableId) {
+    public ItemImage(@Nullable String mName, @Nullable Integer mDrawableId) {
         super(R.layout.layout_list_item_image);
         setText(mName);
         setImageResId(mDrawableId);
@@ -31,12 +32,12 @@ public class ItemImage extends BaseListItem implements IHasImageResourceId, IHas
     }
 
     @Override
-    public int getImageResId() {
+    public Integer getImageResId() {
         return mDrawableId;
     }
 
     @Override
-    public void setImageResId(int resId) {
+    public void setImageResId(Integer resId) {
         this.mDrawableId = resId;
     }
 
