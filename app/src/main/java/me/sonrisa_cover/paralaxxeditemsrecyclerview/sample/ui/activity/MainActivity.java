@@ -55,6 +55,12 @@ public class MainActivity extends ActionBarActivity {
         list.addAll(items);
         list.addAll(items);
         list.addAll(items);
+        list.addAll(items);
+        list.addAll(items);
+        list.addAll(items);
+        list.addAll(items);
+        list.addAll(items);
+        list.addAll(items);
         return list;
     }
 
