@@ -3,7 +3,9 @@ package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.bitmap;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;
+import android.nfc.Tag;
 import android.support.annotation.NonNull;
+import android.util.Log;
 
 import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.Consts;
 
@@ -83,7 +85,12 @@ public class OffsetBitmap {
     }
 
     private Rect getRectWithOffset(){
-        return new Rect(0, getOffset(), baseWidth, baseHeight + getOffset());
+
+        //for centering
+        float bitmapWidth = getBitmap().getWidth();
+        int horizontalOffset = Math.round((int)bitmapWidth > baseWidth ? (bitmapWidth - baseWidth) / 2 : 0);
+
+        return new Rect(horizontalOffset, getOffset(), baseWidth + horizontalOffset, baseHeight + getOffset());
     }
 
     private Rect getRectForDrawing(){

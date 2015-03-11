@@ -12,5 +12,7 @@ public interface IOffsetBitmap {
     public void resetOffset();
     public void draw(Canvas canvas);
     public boolean isReady();
+    public void cancel();
+
 
 }
