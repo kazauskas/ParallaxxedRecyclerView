@@ -4,7 +4,7 @@
     android:layout_height="@dimen/feed_item_height"
     >
 
-    <com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.offset.ImageViewOffset
+    <com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.ImageViewOffset
         android:id="@+id/me_sonrisa_cover_paralaxxed_items_image_view_offset"
         android:layout_width="match_parent"
         android:layout_height="@dimen/feed_item_height"

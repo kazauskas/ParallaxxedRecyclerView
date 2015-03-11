@@ -9,7 +9,7 @@ import android.widget.TextView;
 import com.blogspot.floatyandroid.parallaxxedrecyclerview.R;
 import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.contract.IHasImageResourceId;
 import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.contract.IHasText;
-import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.offset.ImageViewOffset;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.ImageViewOffset;
 
 /**
  * Created by vadim on 3/2/15.

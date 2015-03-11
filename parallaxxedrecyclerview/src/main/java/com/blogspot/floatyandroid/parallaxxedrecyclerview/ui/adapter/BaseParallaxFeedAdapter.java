@@ -18,7 +18,7 @@ import java.util.Map;
 import com.blogspot.floatyandroid.parallaxxedrecyclerview.R;
 import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.BaseListItem;
 import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.model.ItemImage;
-import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.offset.ImageViewOffset;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.ImageViewOffset;
 
 public abstract class BaseParallaxFeedAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements IAdapterParallaxable {
 

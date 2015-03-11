@@ -1,4 +1,4 @@
-package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.offset;
+package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.bitmap;
 
 import android.graphics.Bitmap;
 

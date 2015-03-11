@@ -1,4 +1,4 @@
-package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.offset;
+package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,12 +13,14 @@ import android.widget.ImageView;
 
 import com.blogspot.floatyandroid.parallaxxedrecyclerview.R;
 import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.UIUtils;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.bitmap.AsyncOffsetBitmap;
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.bitmap.IBitmapResourceDecodeFinished;
 
 
 /**
  * Created by vadim on 3/3/15.
  */
-public class ImageViewOffset extends ImageView implements IBitmapResourceDecodeFinished{
+public class ImageViewOffset extends ImageView implements IBitmapResourceDecodeFinished {
     private final static String TAG = "ImageViewOffset";
 
     private Integer mResourceId = null;
@@ -33,7 +35,7 @@ public class ImageViewOffset extends ImageView implements IBitmapResourceDecodeF
     private int mStartColor = BLACK_SMALL_OPACITY;
     private int mEndColor = BLACK_MEDIUM_OPACITY;
 
-    private AsyncBitmapForOffset mSourceBitmap = null;
+    private AsyncOffsetBitmap mSourceBitmap = null;
 
     public ImageViewOffset(Context context) {
         this(context, null);
@@ -115,7 +117,7 @@ public class ImageViewOffset extends ImageView implements IBitmapResourceDecodeF
 
     private void checkIsSourceBitmapInitialized(){
         if ((null == mSourceBitmap) && (null != mResourceId)){
-            mSourceBitmap = new AsyncBitmapForOffset(this.getContext().getApplicationContext(), mResourceId, getMeasuredWidth(), getMeasuredHeight(), this);
+            mSourceBitmap = new AsyncOffsetBitmap(this.getContext().getApplicationContext(), mResourceId, getMeasuredWidth(), getMeasuredHeight(), this);
         }
     }
 

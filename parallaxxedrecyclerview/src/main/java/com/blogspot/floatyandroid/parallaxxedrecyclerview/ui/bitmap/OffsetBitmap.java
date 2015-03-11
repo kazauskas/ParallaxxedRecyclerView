@@ -1,16 +1,16 @@
-package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.view.offset;
+package com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.bitmap;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.support.annotation.NonNull;
 
+import com.blogspot.floatyandroid.parallaxxedrecyclerview.ui.Consts;
+
 /**
  * Created by vadim on 3/3/15.
  */
-public class BitmapForOffset {
-
-    protected final static int INCORRECT_SIZE = 0;
+public class OffsetBitmap {
 
     protected final static int INCORRECT_MIN_OFFSET = -1;
     protected int incorrectMaxOffset;
@@ -25,14 +25,21 @@ public class BitmapForOffset {
     protected float offsetFraction = 0;
     protected int baseOffset = 0;
 
-    public BitmapForOffset(){}
-
-    public BitmapForOffset(@NonNull Bitmap bm, @NonNull Integer baseWidth, @NonNull Integer baseHeight){
-        if ((INCORRECT_SIZE == baseWidth) || (INCORRECT_SIZE == baseHeight)){
+    public OffsetBitmap(@NonNull Bitmap bm, @NonNull Integer baseWidth, @NonNull Integer baseHeight){
+        if ((Consts.INCORRECT_SIZE == baseWidth) || (Consts.INCORRECT_SIZE == baseHeight)){
             throw new IllegalArgumentException("Base width and base height should be more than 0.");
         }
         setBitmap(bm);
         initBaseWidthAndHeight(baseWidth, baseHeight);
+        initDimensions();
+    }
+
+    public boolean isReady(){
+        return getBitmap() != null;
+    }
+
+    public void resetOffset(){
+        this.offset = this.baseOffset;
     }
 
     public Bitmap getBitmap(){
