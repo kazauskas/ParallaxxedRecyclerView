@@ -7,7 +7,9 @@ import android.graphics.LinearGradient;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.ImageView;
@@ -87,7 +89,8 @@ public class ImageViewOffset extends ImageView implements IBitmapResourceDecodeF
         this.setImageDrawable(new ColorDrawable(getResources().getColor(placeholderColorResId)));
     }
 
-    public void setImageBitmap(Bitmap bm){
+    @Override
+    public void setImageBitmap(@Nullable Bitmap bm){
         this.fadeOut();
         mSourceBitmap = null;
         mResourceId = null;
@@ -132,7 +135,7 @@ public class ImageViewOffset extends ImageView implements IBitmapResourceDecodeF
         if (null == mRect)
             mRect = new RectF(0,0,canvas.getWidth(), canvas.getHeight());
 
-        if (null != getDrawable())
+        if (isReady())
             canvas.drawRect(mRect, mPaintBrush);
     }
 

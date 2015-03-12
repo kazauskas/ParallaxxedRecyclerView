@@ -72,6 +72,7 @@ public abstract class BaseParallaxFeedAdapter extends RecyclerView.Adapter<Recyc
     public void onViewRecycled (RecyclerView.ViewHolder holder){
         if ((null != mItemTypes.get(ItemImage.getClassType())) && (mItemTypes.get(ItemImage.getClassType()).equals(holder.getItemViewType()))){
             ((ItemImage.ParallaxImageHolder)holder).categoryThumb.cancel();
+            ((ItemImage.ParallaxImageHolder)holder).categoryThumb.setImageBitmap(null);
         }
     }
 

@@ -18,6 +18,9 @@ public class ItemImage extends BaseListItem implements IHasImageResourceId, IHas
 
     private String mNameId = null;
     private Integer mDrawableId = null;
+    private String mDrawableUrl = null;
+    private Integer mPlaceholderColorResId = null;
+
 
     public ItemImage(){}
 
@@ -25,6 +28,29 @@ public class ItemImage extends BaseListItem implements IHasImageResourceId, IHas
         super(R.layout.layout_list_item_image);
         setText(mName);
         setImageResId(mDrawableId);
+    }
+
+    public ItemImage(@Nullable String mName, @Nullable String drawableUrl, @NonNull Integer placeholderColorResId) {
+        super(R.layout.layout_list_item_image);
+        setText(mName);
+        setDrawableUrl(drawableUrl);
+        setPlaceholderColorResId(placeholderColorResId);
+    }
+
+    public String getDrawableUrl() {
+        return mDrawableUrl;
+    }
+
+    public void setDrawableUrl(String mDrawableUrl) {
+        this.mDrawableUrl = mDrawableUrl;
+    }
+
+    public Integer getPlaceholderColorResId() {
+        return mPlaceholderColorResId;
+    }
+
+    public void setPlaceholderColorResId(Integer mPlaceholderColorResId) {
+        this.mPlaceholderColorResId = mPlaceholderColorResId;
     }
 
     public static String getClassType(){
